@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const userNameInput = document.getElementById('username');
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('password');
+
+    form.addEventListener('submit', function(Event) {
+        Event.preventDefault();
+    });
 });
