@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const feedbackDiv = document.getElementById('form-feedback');
     feedbackDiv.style.display = block;
+    if (isValid == true) {
+        feedbackDiv.textContent = "Registration successful!";
+        feedbackDiv.style.color = '#28a745';
+    }
+    else {
+
+        feedbackDiv.style.color = '#dc3545';
+    }
 
     form.addEventListener('submit', function(Event) {
         Event.preventDefault();
@@ -39,5 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alert("Password must have at least 8 characters");
         messages.push("Password must have at least 8 characters");
     }
+    console.log(messages)
 
 });
