@@ -1,4 +1,4 @@
-function fetchUserData() {
+ async function fetchUserData() {
     const apiUrl = 'https://jsonplaceholder.typicode.com/users';
     dataContainer = document.getElementById(api-data);
    
